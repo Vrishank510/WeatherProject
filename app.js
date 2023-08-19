@@ -9,7 +9,7 @@ var lat;
 var long;
 app.get('/', (req, res) => {
 
-    const url = "https://api.openweathermap.org/data/2.5/weather?lat=57&lon=-2.15&appid=09e3d9aba06127fb27dd87eb8c321c53&units=metric";
+    const url = "https://api.openweathermap.org/data/2.5/weather?lat=57&lon=-2.15&appid&units=metric";
     https.get(url,function(response){
         console.log(response.statusCode);
         response.on("data", function(data){
